@@ -49,13 +49,8 @@ if(commandfile) commandfile.run(bot,message,args);
 
 //przywitania
   if(
-    !cmd.indexOf("hej") ||
     !cmd.indexOf("cześć") ||
-    !cmd.indexOf("czesc") ||
-    !cmd.indexOf("siema") ||
     !cmd.indexOf("elo") ||
-    !cmd.indexOf("eló") ||
-    !cmd.indexOf("gitara") ||
     !cmd.indexOf("witaj") )
     {
       let randHello = RANDOM(8);
@@ -72,7 +67,7 @@ if(commandfile) commandfile.run(bot,message,args);
   if(
     !cmd.indexOf("hara") )
     {
-      return message.channel.send("REGUJE KURDE!!!");
+      return message.channel.send("Słucham?");
     }
 
 
