@@ -51,7 +51,7 @@ if(commandfile) commandfile.run(bot,message,args);
   if(
     !cmd.indexOf("cześć") ||
     !cmd.indexOf("elo") ||
-    !cmd.indexOf("witaj") )
+    !cmd.indexOf("wita") )
     {
       let randHello = RANDOM(8);
       if (randHello == 0) return message.channel.send("Hej!");
