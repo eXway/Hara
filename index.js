@@ -27,7 +27,7 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 
-bot.on("ready", async() => { // po zalogowaniu
+bot.on("ready", async() => { // po zalogowani
   console.log(`${bot.user.username} jest zalogowany!`);
   bot.user.set
 });
