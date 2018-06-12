@@ -12,8 +12,8 @@ if (ranHello == 2) return message.channel.send("Miło cię tu widzieć ;v;");
 if (ranHello == 3) return message.channel.send("Dzień dobry!");
 if (ranHello == 4) return message.channel.send("Cieszę się, że tu jesteś ;v;");
 if (ranHello == 5) return message.channel.send("Jak się masz?");
-if (ranHello == 6) return message.channel.send("Jak tam u Ciebie?");
-if (ranHello == 7) return message.channel.send("Hej, dawno Cię tutaj nie widziałam!");
+if (ranHello == 6) return message.channel.send("Jak tam u ciebie?");
+if (ranHello == 7) return message.channel.send("Hej, dawno cię tutaj nie widziałam!");
 
 }
 
