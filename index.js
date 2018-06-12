@@ -5,6 +5,10 @@ const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 
+function RANDOM(a) {
+  return Math.floor(Math.random() * a);
+}
+
 fs.readdir("./commands/", (err, files) => {
 
   if(err) console.log(err);
@@ -54,9 +58,17 @@ if(commandfile) commandfile.run(bot,message,args);
     !cmd.indexOf("gitara") ||
     !cmd.indexOf("witaj") )
     {
-      return message.channel.send("No siemaneczko");
+      let randHello = RANDOM(8);
+      if (randHello == 0) return message.channel.send("Hej!");
+      if (randHello == 1) return message.channel.send("Witaj!");
+      if (randHello == 2) return message.channel.send("Miło cię tu widzieć ;v;");
+      if (randHello == 3) return message.channel.send("Dzień dobry!");
+      if (randHello == 4) return message.channel.send("Cieszę się, że tu jesteś ;v;");
+      if (randHello == 5) return message.channel.send("Jak się masz?");
+      if (randHello == 6) return message.channel.send("Jak tam u Ciebie?");
+      if (randHello == 7) return message.channel.send("Hej, dawno Cię tutaj nie widziałam!");
     }
-       
+
   if(
     !cmd.indexOf("hara") )
     {
