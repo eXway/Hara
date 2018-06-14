@@ -71,7 +71,7 @@ if(commandfile) commandfile.run(bot,message,args);
     }
   
   if(
-    !messageArray.indexOf("kurw") ||
+    !args.indexOf("kurw") ||
     !message.content.indexOf("huj") ||
     !message.content.indexOf("chuj") ||
     !message.content.indexOf("pierdol"))
