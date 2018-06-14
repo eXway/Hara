@@ -71,7 +71,7 @@ if(commandfile) commandfile.run(bot,message,args);
     }
   
   if(
-    !message.content.indexOf("kurw") ||
+    !message.content.toLowerCase().replace(/ /g, "spacja").indexOf("kurw") ||
     !message.content.indexOf("huj") ||
     !message.content.indexOf("chuj") ||
     !message.content.indexOf("pierdol"))
