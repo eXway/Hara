@@ -71,10 +71,10 @@ if(commandfile) commandfile.run(bot,message,args);
     }
   
   if(
-    !message.indexOf("kurw") ||
-    !message.indexOf("huj") ||
-    !message.indexOf("chuj") ||
-    !message.indexOf("pierdol"))
+    !message.content.indexOf("kurw") ||
+    !message.content.indexOf("huj") ||
+    !message.content.indexOf("chuj") ||
+    !message.content.indexOf("pierdol"))
   {
    let rendCurse = RANDOM(4);
    if (randCurse == 0) return message.channel.send("Nie przeklinaj, proszę ;^;");
