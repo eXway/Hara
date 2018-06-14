@@ -71,13 +71,13 @@ if(commandfile) commandfile.run(bot,message,args);
     }
   
   if(
-    !args.indexOf("kurw") ||
+    !message.content.indexOf("kurw") ||
     !message.content.indexOf("huj") ||
     !message.content.indexOf("chuj") ||
     !message.content.indexOf("pierdol"))
   {
    let randCurse = RANDOM(4);
-   if (randCurse == 0) return message.channel.send("Nie przeklinaj, proszę ;^;");
+   if (randCurse == 0) return message.channel.send(`${message.content} Nie przeklinaj, proszę ;^;`);
    if (randCurse == 1) return message.channel.send("Uważaj na słowa!");
    if (randCurse == 2) return message.channel.send("Używaj milszych słow, komuś się może zrobić przykro! '^'");
    if (randCurse == 3) return message.channel.send("Proszę nie używaj brzydkich słów!");
