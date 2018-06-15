@@ -8,7 +8,7 @@ let {body} = await superagent
 .get(`https://api.tenor.com/v1/random?key=88RODP3HJCA2&q=Anime+Head+pat&safesearch=off`);
 
 let hugembed = new Discord.RichEmbed()
-.setColor("#dda6bb")
+.setColor("#8f8ff1")
 .addField("Pat pat!", `${message.author} pogłaskał(a) ${hUser}`)
 .setImage(body.results[0].url);
 
