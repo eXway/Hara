@@ -74,6 +74,9 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("kurw") > -1 ||
     message.content.toLowerCase().search("huj") > -1 ||
     message.content.toLowerCase().search("chuj") > -1 ||
+    message.content.toLowerCase().search("pizd") > -1 ||
+    message.content.toLowerCase().search("kutas") > -1 ||
+    message.content.toLowerCase().search("nudeski") > -1 ||
     message.content.toLowerCase().search("pierdol") > -1)
   {
    let randCurse = RANDOM(4);
