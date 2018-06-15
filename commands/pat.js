@@ -10,7 +10,7 @@ let {body} = await superagent
 let hugembed = new Discord.RichEmbed()
 .setColor("#dda6bb")
 .addField("Hug!", `${message.author} pogłaskał(a) ${hUser}`)
-.setImage(body.results.url);
+.setImage(body.results[0].url);
 
 message.delete().catch(O_o=>{});
 
