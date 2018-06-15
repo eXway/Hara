@@ -6,6 +6,7 @@ let embedInfo = new Discord.RichEmbed()
 .addField("/ho/help", "Jesteś tutaj!")
 .addField("/ho/info", "Trochę informacji o nas")
 .addField("/ho/pat", "*pat pat*")
+.setFooter("Pilnujemy porządku! T^T")
 .setColor("#8f8ff1");
 
 
