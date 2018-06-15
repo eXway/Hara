@@ -5,7 +5,7 @@ let embedInfo = new Discord.RichEmbed()
 .setTitle("Komendy")
 .addField("/ho/help", "Jesteś tutaj!")
 .addField("/ho/info", "Trochę informacji o nas")
-.addField("/ho/pat", "*pat pat*")
+.addField("/ho/pat @ktoś", "*pat pat*")
 .setFooter("Pilnujemy porządku! T^T")
 .setColor("#8f8ff1");
 
