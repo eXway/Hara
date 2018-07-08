@@ -68,7 +68,7 @@ if(commandfile) commandfile.run(bot,message,args);
   if(
     !cmd.indexOf("hara") )
     {
-      let randHara = 3;
+      let randHara = RANDOM(4);
       if (randHara == 0) return message.channel.send("Słucham?");
       if (randHara == 1) return message.channel.send("Tak?");
       if (randHara == 2) return message.channel.send("Ja? Hmmm?");
