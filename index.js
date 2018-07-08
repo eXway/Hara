@@ -61,14 +61,18 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randHello == 3) return message.channel.send("Dzień dobry!");
       if (randHello == 4) return message.channel.send("Cieszę się, że tu jesteś ;v;");
       if (randHello == 5) return message.channel.send("Jak się masz?");
-      if (randHello == 6) return message.channel.send("Jak tam u Ciebie?");
-      if (randHello == 7) return message.channel.send("Hej, dawno Cię tutaj nie widziałam!");
+      if (randHello == 6) return message.channel.send("Jak tam u ciebie?");
+      if (randHello == 7) return message.channel.send("Hej, dawno cię tutaj nie widziałam!");
     }
 
   if(
     !cmd.indexOf("hara") )
     {
-      return message.channel.send("Słucham?");
+      let randHara = 3;
+      if (randHara == 0) return message.channel.send("Słucham?");
+      if (randHara == 1) return message.channel.send("Tak?");
+      if (randHara == 2) return message.channel.send("Ja? Hmmm?");
+      if (randHara == 3) return message.channel.send(`Potrzebujesz czegoś, ${message.author}?`);
     }
   
   if(
