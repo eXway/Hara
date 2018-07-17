@@ -90,6 +90,20 @@ if(commandfile) commandfile.run(bot,message,args);
    if (randCurse == 2) return message.channel.send("Używaj milszych słow, komuś się może zrobić przykro! '^'");
    if (randCurse == 3) return message.channel.send("Proszę nie używaj brzydkich słów!");
   }
+  
+    if(
+    !cmd.indexOf("dobranoc) ||
+    !cmd.indexOf("branocka") ||
+    !cmd.indexOf("śpij") )
+    {
+      let randHello = RANDOM(5);
+      if (randHello == 0) return message.channel.send("Śpij dobrze!");
+      if (randHello == 1) return message.channel.send("Do zobaczenia jutro");
+      if (randHello == 2) return message.channel.send("Karaluchy pod poduchy ;v;");
+      if (randHello == 3) return message.channel.send("A może zosaniesz jeszcze na chwilkę? ;v;");
+      if (randHello == 4) return message.channel.send("Miłych snów!");
+      if (randHello == 4) return message.channel.send("Niech ci gwiazdeczki tańczą do snu <3");
+    }
 
 
 
