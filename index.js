@@ -92,7 +92,7 @@ if(commandfile) commandfile.run(bot,message,args);
   }
   
     if(
-    !cmd.indexOf("dobranoc) ||
+    !cmd.indexOf("dobranoc") ||
     !cmd.indexOf("branocka") ||
     !cmd.indexOf("śpij") )
     {
