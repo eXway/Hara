@@ -84,6 +84,13 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("nudeski") > -1 ||
     message.content.toLowerCase().search("pierdol") > -1)
   {
+   let curseArray = [message.content.toLowerCase().search("kurw"), message.content.toLowerCase().search("huj") ];
+    let messageEdited = message.content;
+   for (i = 0; i=>7; i++)
+   {
+     if (curseArray[i] = !-1) messageEdited[curseArray[i]] = "*przekleństwo*";
+   }
+   message.edit(messageEdited);
    let randCurse = RANDOM(4);
    if (randCurse == 0) return message.channel.send("Nie przeklinaj, proszę ;^;");
    if (randCurse == 1) return message.channel.send("Uważaj na słowa!");
