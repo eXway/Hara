@@ -1,4 +1,5 @@
 const config = require("./config.json");
+const key = process.env.token;
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
@@ -109,4 +110,4 @@ if(commandfile) commandfile.run(bot,message,args);
 
 })
 
-bot.login(config.token);
+bot.login(key);
