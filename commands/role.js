@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
   if(rMember.roles.has(gRole.id)) return message.reply("Nie mogę tego zrobić, ty już masz tę rolę");
   await(rMember.addRole(gRole.id));
 
-  return rMember.send(`Gratki, dodałeś sobie rolę: ${gRole.name}`)
+  return rMember.send(`Gratki, dodałeś sobie rolę: ${gRole.name}`);
 }
 
 module.exports.help = {
