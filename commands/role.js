@@ -8,7 +8,8 @@ module.exports.run = async (bot, message, args) => {
   if(!rMember) return message.reply("Nie mogę cię znaleźć");
   let role = args.join(" ").slice(22);
   if(!role) return message.reply("Nie podałeś żadnej roli :c");
-  if(role == "Yaoi") let gRole = "Yaoi";
+  let gRole = 0;
+  if(role == "Yaoi") gRole = "Yaoi";
   if(!gRole) return message.reply("Nie mogłem znaleźć tej roli :c");
 
   if(rMember.roles.has(gRole.id)) return message.reply("Nie mogę tego zrobić, ty już masz tę rolę");
