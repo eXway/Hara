@@ -9,5 +9,5 @@ return message.channel.send(roleId);
 }
 
 module.exports.help = {
-  name: "pat"
+  name: "role"
 }
