@@ -2,20 +2,21 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 
-  //!addrole @andrew Dog Person
-  //if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("Nie możesz tego zrobić :c");
-  let rMember = `${message.member}`;
-  if(!rMember) return message.reply("Nie mogę cię znaleźć");
-  let role = args.join(" ").slice(22);
-  if(!role) return message.reply("Nie podałeś żadnej roli :c");
-  let gRole = 0;
-  if(role == "Yaoi") gRole = "Yaoi";
-  if(!gRole) return message.reply("Nie mogłem znaleźć tej roli :c");
+if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.replay("IF 1");
+let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
+let role = args.join(" ").slice(22);
+if(!role) return message.replay("specify a role!");
+let gRole = message.guild.roles.find(`name`, role);
+if(!gRole) return message.replay("nie ma roli");
 
-  if(rMember.roles.has(gRole.id)) return message.reply("Nie mogę tego zrobić, ty już masz tę rolę");
-  await(rMember.addRole(gRole.id));
+if(rMember.roles.has(gRole.id));
+await(rMember.addRole(gRole.id));
 
-  return rMember.send(`Gratki, dodałeś sobie rolę: ${gRole.name}`);
+try{
+ await rMember.send(`Gratki dostałeś role ${gRole.name}`)
+}catch(e){
+  message.channel.send(`Gratki dla <@${rMember.id}>, dostania ${gRole.name}`);
+}
 }
 
 module.exports.help = {
