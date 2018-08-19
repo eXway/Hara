@@ -5,7 +5,7 @@ let roleUser = message.guild.member(message.author);
 let role = args[0];
 if(!role) return message.reply("Podaj rolę! :c");
 let fRole = message.guild.roles.find(`name`, role);
-if (!fRole) return message.reply("Nie mogę przydzielić tobie tej roli");
+if (!fRole) return message.reply("nie mogę przydzielić tobie tej roli");
 if (
   role == "Yaoi"||
   role == "HoneyWorks"||
@@ -15,7 +15,7 @@ await(roleUser.addRole(fRole.id));
 return message.channel.send(`Proszu ${roleUser}, dodałeś sobie rolę ${fRole}`);
 }
 
-return message.reply(`Nie możesz mieć tej roli :c `);
+return message.reply(`nie możesz mieć tej roli :c `);
 
 }
 module.exports.help = {

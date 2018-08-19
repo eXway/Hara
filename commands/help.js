@@ -4,7 +4,8 @@ module.exports.run = async (bot, message, args) => {
 let embedInfo = new Discord.RichEmbed()
 .setTitle("Komendy")
 .addField("/ho/help", "Jesteś tutaj!")
-.addField("/ho/info", "Trochę informacji o nas")
+.addField("/ho/role **rola**", "Dodaj sobię rolę")
+.addField("/ho/delrole **rola**", "Usuń rolę")
 .addField("/ho/pat @ktoś", "*pat pat*")
 .setFooter("Pilnujemy porządku! T^T")
 .setColor("#8f8ff1");
