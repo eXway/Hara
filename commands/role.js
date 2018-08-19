@@ -8,10 +8,8 @@ let roleID = role.id;
 let fRole = message.guild.roles.find(`name`, role);
 if (!fRole) return message.reply("Nie mogę przydzielić tobie ter roli");
 
-if(!roleUser.has(fRole.id)) await(roleUser.addRole(fRole.id));
-
-
-return message.channel.send(`Proszu oto <@${roleID}>`);
+await(roleUser.addRole(fRole.id));
+return message.channel.send(`Proszu oto <@${roleID}>, ${roleUser}`);
 
 
 }
