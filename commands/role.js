@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-let role = args.join(" ").slice(22);
+let role = args[0];
 if(!role) return message.reply("Podaj rolę! :c");
 let roleID = role.id;
 let fRole = message.guild.roles.find(`name`, role);
