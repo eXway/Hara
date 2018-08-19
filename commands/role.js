@@ -15,7 +15,7 @@ await(roleUser.addRole(fRole.id));
 return message.channel.send(`Proszu ${roleUser}, dodałeś sobie rolę ${fRole}`);
 }
 
-return message.reply("Nie możesz mieć tej roli :c");
+return message.reply(`Nie możesz mieć tej roli :c ${fRole}`);
 
 }
 module.exports.help = {
