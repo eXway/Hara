@@ -89,7 +89,7 @@ if(commandfile) commandfile.run(bot,message,args);
    let randCurse = RANDOM(4);
    if (randCurse == 0) return message.channel.send("Nie przeklinaj, proszę ;^;");
    if (randCurse == 1) return message.channel.send("Uważaj na słowa!");
-   if (randCurse == 2) return message.channel.send("Używaj milszych słow, komuś się może zrobić przykro! '^'");
+   if (randCurse == 2) return message.channel.send("Używaj milszych słów, komuś się może zrobić przykro! '^'");
    if (randCurse == 3) return message.channel.send("Proszę nie używaj brzydkich słów!");
   }
 
