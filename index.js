@@ -75,7 +75,7 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randHara == 2) return message.channel.send("Ja? Hmmm?");
       if (randHara == 3) return message.channel.send(`Potrzebujesz czegoś, ${message.author}?`);
     }
-  
+
   if(
     message.content.toLowerCase().search("kurw") > -1 ||
     message.content.toLowerCase().search("huj") > -1 ||
@@ -83,6 +83,7 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("pizd") > -1 ||
     message.content.toLowerCase().search("kutas") > -1 ||
     message.content.toLowerCase().search("nudeski") > -1 ||
+    message.content.toLowerCase().search("jeba") > -1 ||
     message.content.toLowerCase().search("pierdol") > -1)
   {
    let randCurse = RANDOM(4);
@@ -91,7 +92,7 @@ if(commandfile) commandfile.run(bot,message,args);
    if (randCurse == 2) return message.channel.send("Używaj milszych słow, komuś się może zrobić przykro! '^'");
    if (randCurse == 3) return message.channel.send("Proszę nie używaj brzydkich słów!");
   }
-  
+
     if(
     !cmd.indexOf("dobranoc") ||
     !cmd.indexOf("branocka") ||
