@@ -108,17 +108,17 @@ if(commandfile) commandfile.run(bot,message,args);
     }
 
     if(
-    !cmd.indexOf("iksłej") ||
-    !cmd.indexOf("ekswej") ||
-    !cmd.indexOf("eksłej") ||
-    !cmd.indexOf("ixłej") ||
-    !cmd.indexOf("exłej") ||
-    !cmd.indexOf("eksway") ||
-    !cmd.indexOf("sexway") ||
-    !cmd.indexOf("sexłej") ||
-    !cmd.indexOf("sekswej") )
+    message.content.toLowerCase().search("iksłej") > -1 ||
+    message.content.toLowerCase().search("ekswej") > -1||
+    message.content.toLowerCase().search("eksłej") > -1||
+    message.content.toLowerCase().search("ixłej") > -1||
+    message.content.toLowerCase().search("exłej") > -1||
+    message.content.toLowerCase().search("eksway") > -1||
+    message.content.toLowerCase().search("sexway") > -1||
+    message.content.toLowerCase().search("sexłej") > -1||
+    message.content.toLowerCase().search("sekswej") )
     {
-      return message.channel.send("eXway*");
+      return message.channel.send("*eXway");
     }
 
 
