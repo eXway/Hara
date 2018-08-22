@@ -107,19 +107,19 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randHello == 4) return message.channel.send("Niech ci gwiazdeczki tańczą do snu <3");
     }
 
-    // if(
-    // message.content.toLowerCase().search("iksłej") > -1 ||
-    // message.content.toLowerCase().search("ekswej") > -1||
-    // message.content.toLowerCase().search("eksłej") > -1||
-    // message.content.toLowerCase().search("ixłej") > -1||
-    // message.content.toLowerCase().search("exłej") > -1||
-    // message.content.toLowerCase().search("eksway") > -1||
-    // message.content.toLowerCase().search("sexway") > -1||
-    // message.content.toLowerCase().search("sexłej") > -1||
-    // message.content.toLowerCase().search("sekswej") )
-    // {
-    //   return message.channel.send("*eXway");
-    // }
+    if(
+    message.content.toLowerCase().search("iksłej") > -1 ||
+    message.content.toLowerCase().search("ekswej") > -1 ||
+    message.content.toLowerCase().search("eksłej") > -1 ||
+    message.content.toLowerCase().search("ixłej") > -1 ||
+    message.content.toLowerCase().search("exłej") > -1 ||
+    message.content.toLowerCase().search("eksway") > -1 ||
+    message.content.toLowerCase().search("sexway") > -1 ||
+    message.content.toLowerCase().search("sexłej") > -1 ||
+    message.content.toLowerCase().search("sekswej") > -1)
+    {
+      return message.channel.send("*eXway");
+    }
 
 
 
