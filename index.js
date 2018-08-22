@@ -107,6 +107,20 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randHello == 4) return message.channel.send("Niech ci gwiazdeczki tańczą do snu <3");
     }
 
+    if(
+    !cmd.indexOf("iksłej") ||
+    !cmd.indexOf("ekswej") ||
+    !cmd.indexOf("eksłej") ||
+    !cmd.indexOf("ixłej") ||
+    !cmd.indexOf("exłej") ||
+    !cmd.indexOf("eksway") ||
+    !cmd.indexOf("sexway") ||
+    !cmd.indexOf("sexłej") ||
+    !cmd.indexOf("sekswej") )
+    {
+      return message.channel.send("eXway*");
+    }
+
 
 
 })
