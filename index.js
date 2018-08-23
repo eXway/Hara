@@ -122,6 +122,7 @@ if(commandfile) commandfile.run(bot,message,args);
       return message.channel.send("*eXway");
     }
 
+    if (message.author.id == 218013067156520960 ) {message.delete().catch(O_o=>{});}
 
 
 })
