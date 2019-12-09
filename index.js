@@ -51,32 +51,6 @@ if(commandfile) commandfile.run(bot,message,args);
 
 //przywitania
   if(
-    !cmd.indexOf("cześć") ||
-    !cmd.indexOf("elo") ||
-    !cmd.indexOf("wita") )
-    {
-      let randHello = RANDOM(8);
-      if (randHello == 0) return message.channel.send("Hej!");
-      if (randHello == 1) return message.channel.send("Witaj!");
-      if (randHello == 2) return message.channel.send("Miło cię tu widzieć ;v;");
-      if (randHello == 3) return message.channel.send("Dzień dobry!");
-      if (randHello == 4) return message.channel.send("Cieszę się, że tu jesteś ;v;");
-      if (randHello == 5) return message.channel.send("Jak się masz?");
-      if (randHello == 6) return message.channel.send("Jak tam u ciebie?");
-      if (randHello == 7) return message.channel.send("Hej, dawno cię tutaj nie widziałam!");
-    }
-
-  if(
-    message.content.toLowerCase().search("hara") > -1 )
-    {
-      let randHara = RANDOM(4);
-      if (randHara == 0) return message.channel.send("Słucham?");
-      if (randHara == 1) return message.channel.send("Tak?");
-      if (randHara == 2) return message.channel.send("Ja? Hmmm?");
-      if (randHara == 3) return message.channel.send(`Potrzebujesz czegoś, ${message.author}?`);
-    }
-
-  if(
     message.content.toLowerCase().search("kurw") > -1 ||
     message.content.toLowerCase().search("huj") > -1 ||
     message.content.toLowerCase().search("chuj") > -1 ||
@@ -117,6 +91,32 @@ if(commandfile) commandfile.run(bot,message,args);
    message.channel.send(message.author + " - **cenzura**:\n"+filteredContent.join(" "));
    message.delete().catch(O_o=>{});
   }
+  
+  if(
+    !cmd.indexOf("cześć") ||
+    !cmd.indexOf("elo") ||
+    !cmd.indexOf("wita") )
+    {
+      let randHello = RANDOM(8);
+      if (randHello == 0) return message.channel.send("Hej!");
+      if (randHello == 1) return message.channel.send("Witaj!");
+      if (randHello == 2) return message.channel.send("Miło cię tu widzieć ;v;");
+      if (randHello == 3) return message.channel.send("Dzień dobry!");
+      if (randHello == 4) return message.channel.send("Cieszę się, że tu jesteś ;v;");
+      if (randHello == 5) return message.channel.send("Jak się masz?");
+      if (randHello == 6) return message.channel.send("Jak tam u ciebie?");
+      if (randHello == 7) return message.channel.send("Hej, dawno cię tutaj nie widziałam!");
+    }
+
+  if(
+    message.content.toLowerCase().search("hara") > -1 )
+    {
+      let randHara = RANDOM(4);
+      if (randHara == 0) return message.channel.send("Słucham?");
+      if (randHara == 1) return message.channel.send("Tak?");
+      if (randHara == 2) return message.channel.send("Ja? Hmmm?");
+      if (randHara == 3) return message.channel.send(`Potrzebujesz czegoś, ${message.author}?`);
+    }
 
     if(
     !cmd.indexOf("dobranoc") ||
