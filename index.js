@@ -87,6 +87,7 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("pierdol") > -1)
   {
    let randCurse = RANDOM(4);
+    messange.channel.send(message.content);
    if (randCurse == 0) return message.channel.send("Nie przeklinaj, proszę ;^;");
    if (randCurse == 1) return message.channel.send("Uważaj na słowa!");
    if (randCurse == 2) return message.channel.send("Używaj milszych słów, komuś się może zrobić przykro! '^'");
