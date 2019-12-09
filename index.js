@@ -67,7 +67,7 @@ if(commandfile) commandfile.run(bot,message,args);
     }
 
   if(
-    !cmd.indexOf("hara") )
+    message.content.toLowerCase().search("hara") > -1 )
     {
       let randHara = RANDOM(4);
       if (randHara == 0) return message.channel.send("Słucham?");
@@ -86,12 +86,36 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("jeba") > -1 ||
     message.content.toLowerCase().search("pierdol") > -1)
   {
-   let randCurse = RANDOM(4);
-    messange.channel.send(message.content);
-   if (randCurse == 0) return message.channel.send("Nie przeklinaj, proszę ;^;");
-   if (randCurse == 1) return message.channel.send("Uważaj na słowa!");
-   if (randCurse == 2) return message.channel.send("Używaj milszych słów, komuś się może zrobić przykro! '^'");
-   if (randCurse == 3) return message.channel.send("Proszę nie używaj brzydkich słów!");
+   let splitContent = messageArray;
+   let filteredContent = [];
+   for (let incres = 0; incres < splitContent.length; incres++) {
+     if (
+       splitContent[incres].toLowerCase().search("kurw") > -1 ||
+       splitContent[incres].toLowerCase().search("huj") > -1 ||
+       splitContent[incres].toLowerCase().search("chuj") > -1 ||
+       splitContent[incres].toLowerCase().search("pizd") > -1 ||
+       splitContent[incres].toLowerCase().search("kutas") > -1 ||
+       splitContent[incres].toLowerCase().search("nudeski") > -1 ||
+       splitContent[incres].toLowerCase().search("jeba") > -1 ||
+       splitContent[incres].toLowerCase().search("pierdol") > -1) {
+       let splitContLeng = splitContent[incres].length;
+       splitContent[incres] = splitContent[incres].substr(0, 2);
+       for (let incres_2 = 1; incres_2 < splitContLeng; incres_2++) {
+         curseRand = RANDOM(6);
+         if (curseRand == 0) curseMark ='!';
+         if (curseRand == 1) curseMark ='@';
+         if (curseRand == 2) curseMark ='#';
+         if (curseRand == 3) curseMark ='$';
+         if (curseRand == 4) curseMark ='%';
+         if (curseRand == 5) curseMark ='&';
+
+         splitContent[incres] += curseMark;
+       }
+     }
+    filteredContent.push(splitContent[incres]);
+   }
+   message.channel.send(message.author + " - **cenzura**:\n"+filteredContent.join(" "));
+   message.delete().catch(O_o=>{});
   }
 
     if(
@@ -123,7 +147,7 @@ if(commandfile) commandfile.run(bot,message,args);
       return message.channel.send("*eXway");
     }
 
-    //if (message.author.id == 220513528434524160 ) {message.delete().catch(O_o=>{});}
+    //if (message.author.id == 215420153221873665 ) {message.delete().catch(O_o=>{});}
 
 
 })
