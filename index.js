@@ -74,7 +74,7 @@ if(commandfile) commandfile.run(bot,message,args);
        splitContent[incres].toLowerCase().search("pierdol") > -1) {
        let splitContLeng = splitContent[incres].length;
        splitContent[incres] = splitContent[incres].substr(0, 2);
-       for (let incres_2 = 1; incres_2 < splitContLeng; incres_2++) {
+       for (let incres_2 = 2; incres_2 < splitContLeng; incres_2++) {
          curseRand = RANDOM(6);
          if (curseRand == 0) curseMark ='!';
          if (curseRand == 1) curseMark ='@';
