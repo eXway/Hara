@@ -61,6 +61,7 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("pierdol") > -1)
   {
    let splitContent = messageArray;
+   let filteredContent = [];
    for (let incres = 0; incres < splitContent.length; incres++) {
      if (
        splitContent[incres].toLowerCase().search("kurw") > -1 ||
