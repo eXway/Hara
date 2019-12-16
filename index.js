@@ -61,7 +61,6 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("pierdol") > -1)
   {
    let splitContent = messageArray;
-   let filteredContent = [];
    for (let incres = 0; incres < splitContent.length; incres++) {
      if (
        splitContent[incres].toLowerCase().search("kurw") > -1 ||
@@ -73,8 +72,9 @@ if(commandfile) commandfile.run(bot,message,args);
        splitContent[incres].toLowerCase().search("jeba") > -1 ||
        splitContent[incres].toLowerCase().search("pierdol") > -1) {
        let splitContLeng = splitContent[incres].length;
+       let saveSplitContent = splitContent[incres];
        splitContent[incres] = splitContent[incres].substr(0, 2);
-       for (let incres_2 = 2; incres_2 < splitContLeng; incres_2++) {
+       for (let incres_2 = 2; incres_2 < splitContLeng - 1; incres_2++) {
          curseRand = RANDOM(6);
          if (curseRand == 0) curseMark ='!';
          if (curseRand == 1) curseMark ='@';
@@ -85,6 +85,7 @@ if(commandfile) commandfile.run(bot,message,args);
 
          splitContent[incres] += curseMark;
        }
+       splitContent[incres] += saveSplitContent.substr(-1, 1);
      }
     filteredContent.push(splitContent[incres]);
    }
