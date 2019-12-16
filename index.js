@@ -75,7 +75,7 @@ if(commandfile) commandfile.run(bot,message,args);
        let splitContLeng = splitContent[incres].length;
        let saveSplitContent = splitContent[incres];
        splitContent[incres] = splitContent[incres].substr(0, 1);
-       for (let incres_2 = 1; incres_2 < splitContLeng; incres_2++) {
+       for (let incres_2 = 1; incres_2 < splitContLeng - 1; incres_2++) {
          curseRand = RANDOM(6);
          if (curseRand == 0) curseMark ='!';
          if (curseRand == 1) curseMark ='@';
