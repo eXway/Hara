@@ -56,8 +56,11 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("chuj") > -1 ||
     message.content.toLowerCase().search("pizd") > -1 ||
     message.content.toLowerCase().search("kutas") > -1 ||
-    message.content.toLowerCase().search("nudeski") > -1 ||
+    message.content.toLowerCase().search("nudeski") > -1 ||       
     message.content.toLowerCase().search("jeba") > -1 ||
+    message.content.toLowerCase().search("jebie") > -1 ||
+    message.content.toLowerCase().search("jebię") > -1 ||
+    message.content.toLowerCase().search("jebn") > -1 ||
     message.content.toLowerCase().search("pierdol") > -1)
   {
    let splitContent = messageArray;
@@ -71,6 +74,9 @@ if(commandfile) commandfile.run(bot,message,args);
        splitContent[incres].toLowerCase().search("kutas") > -1 ||
        splitContent[incres].toLowerCase().search("nudeski") > -1 ||
        splitContent[incres].toLowerCase().search("jeba") > -1 ||
+       splitContent[incres].toLowerCase().search("jebie") > -1 ||
+       splitContent[incres].toLowerCase().search("jebię") > -1 ||
+       splitContent[incres].toLowerCase().search("jebn") > -1 ||
        splitContent[incres].toLowerCase().search("pierdol") > -1) {
        let splitContLeng = splitContent[incres].length;
        let saveSplitContent = splitContent[incres];
