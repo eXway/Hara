@@ -50,7 +50,7 @@ if(commandfile) commandfile.run(bot,message,args);
 
 
 //przywitania
-  if(
+  if((
     message.content.toLowerCase().search("kurw") > -1 ||
     message.content.toLowerCase().search("huj") > -1 ||
     message.content.toLowerCase().search("chuj") > -1 ||
@@ -61,7 +61,8 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("jebie") > -1 ||
     message.content.toLowerCase().search("jebię") > -1 ||
     message.content.toLowerCase().search("jebn") > -1 ||
-    message.content.toLowerCase().search("pierdol") > -1)
+    message.content.toLowerCase().search("pierdol") > -1) &&
+    message.author.id != "215420153221873665")
   {
    let splitContent = messageArray;
    let filteredContent = [];
