@@ -152,6 +152,8 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("sexłej") > -1 ||
     message.content.toLowerCase().search("seksłej") > -1 ||
     message.content.toLowerCase().search("sekslej") > -1 ||
+    message.content.toLowerCase().search("sekysłej") > -1 ||
+    message.content.toLowerCase().search("segzyłej") > -1 ||
     message.content.toLowerCase().search("sekswej") > -1)
     {
       return message.channel.send("*eXway");
