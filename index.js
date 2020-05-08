@@ -154,7 +154,13 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("sekslej") > -1 ||
     message.content.toLowerCase().search("sekysłej") > -1 ||
     message.content.toLowerCase().search("segzyłej") > -1 ||
-    message.content.toLowerCase().search("sekswej") > -1)
+    message.content.toLowerCase().search("Zegzłej") > -1 ||
+    message.content.toLowerCase().search("Zezłej") > -1 ||
+    message.content.toLowerCase().search("sekyslej") > -1 ||
+    message.content.toLowerCase().search("segzylej") > -1 ||
+    message.content.toLowerCase().search("Zegzlej") > -1 ||
+    message.content.toLowerCase().search("Zezlej") > -1 ||
+    message.content.toLowerCase().search("sekswej") > -1)Zezłej
     {
       return message.channel.send("*eXway");
     }
