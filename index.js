@@ -164,6 +164,7 @@ if(commandfile) commandfile.run(bot,message,args);
     message.content.toLowerCase().search("segzlej") > -1 ||
     message.content.toLowerCase().search("saxway") > -1 ||
     message.content.toLowerCase().search("ewaj") > -1 ||
+    message.content.toLowerCase().search("seguzyłej") > -1 ||
     message.content.toLowerCase().search("sekswej") > -1)
     {
       return message.channel.send("*eXway");
